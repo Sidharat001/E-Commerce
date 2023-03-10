@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-light navbar-light">
+<nav id="fixed_navbar" class="navbar navbar-expand-lg bg-light navbar-light">
     <!-- Container wrapper -->
     <div class="container">
         <!-- Navbar brand -->
