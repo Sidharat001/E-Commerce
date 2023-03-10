@@ -1,0 +1,30 @@
+/**MegaDrop Down */
+.dropdown-hover:hover>.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+
+    pointer-events: none;
+}
+
+#megaDropdown{
+    width: 70vw !important;
+    padding: 10px;
+}
+
+/** Slider Section*/
+.productSliderhomepage > .carousel-inner > .carousel-item > img{
+    height: 65vh;
+}
+
+/**OfferBanner */
+
+.offerBaner:hover {
+    transform: scale3d(1.1, 1.1,1.1);
+    /* transition: cubic-bezier(0.55, 0.055, 0.675, 0.19); */
+}
+
+.offerBaner {
+    transition: 03s linear;
+}
