@@ -11,14 +11,14 @@
         </button>
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-4 me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <!-- Link -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item dropdown dropdown-hover position-static">
+                <li class="nav-item px-2 dropdown dropdown-hover position-static">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false"> Mega menu </a>
+                        data-mdb-toggle="dropdown" aria-expanded="false"> Sale </a>
                     <!-- Dropdown menu -->
                     <div id="megaDropdown" class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown"
                         style="border-top-left-radius: 0; border-top-right-radius: 0;">
@@ -75,6 +75,12 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Offers</a>
                 </li>
                 <!-- Dropdown -->
             </ul>

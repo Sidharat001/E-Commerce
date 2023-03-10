@@ -8,33 +8,29 @@
     pointer-events: none;
 }
 
-#megaDropdown{
+#megaDropdown {
     width: 70vw !important;
     padding: 10px;
 }
 
+div#megaDropdown {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 /** Slider Section*/
-.productSliderhomepage > .carousel-inner > .carousel-item > img{
+.productSliderhomepage>.carousel-inner>.carousel-item>img {
     height: 65vh;
 }
 
 /**OfferBanner */
 
 .offerBaner:hover {
-    transform: scale3d(1.1, 1.1,1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
     /* transition: cubic-bezier(0.55, 0.055, 0.675, 0.19); */
 }
 
 .offerBaner {
     transition: 03s linear;
 }
-
-
-#owl-demo .item{
-    margin: 3px;
-  }
-  #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
