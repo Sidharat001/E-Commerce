@@ -1,6 +1,6 @@
 form {
     background: #fff;
-    max-width: 360px;
+    max-width: 30vw;
     width: 100%;
     padding: 58px 44px;
     border: 1px solid #e1e2f0;
@@ -8,12 +8,15 @@ form {
     box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
     transition: all 0.3s ease;
 }
+
 .row label {
     font-size: 13px;
     color: #8086a9;
+    padding: 0;
 }
 
 .row input {
+    padding: 0;
     flex: 1;
     padding: 13px;
     border: 1px solid #d6d8e6;
@@ -42,7 +45,7 @@ button {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     margin-top: 15px;
-    transition: background 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 button:hover {
