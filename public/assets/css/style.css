@@ -4,7 +4,6 @@
 }
 
 .dropdown-hover>.dropdown-toggle:active {
-
     pointer-events: none;
 }
 
@@ -17,6 +16,22 @@ div#megaDropdown {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+.header_navigation>li>a,
+.headerMenusIcons>li>a {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+/**user Active Satuts */
+.userLogin {
+    background: #1cbb38;
+    padding: 0px 6px;
+    border-radius: 50%;
+    margin: 0;
 }
 
 /** Slider Section*/
@@ -33,4 +48,51 @@ div#megaDropdown {
 
 .offerBaner {
     transition: 03s linear;
+}
+
+/*--  Sticy nav bar css ---*/
+.fixed-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 3px 9px #00000017;
+    width: 100%;
+}
+
+.fixed-header {
+    animation: mymove 0.2s ease-in;
+}
+
+@keyframes mymove {
+    from {
+        top: -20px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+/**
+ * This Styling use for Login Form
+ */
+
+.cascading-right {
+    margin-right: -50px;
+}
+
+@media (max-width: 991.98px) {
+    .cascading-right {
+        margin-right: 0;
+    }
+}
+
+/**
+ * 
+ * Singup Form Effect
+ */
+
+.SignUpCard-Body {
+    box-shadow: 0px 0px 20px 5px #00000029;
 }

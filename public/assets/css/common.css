@@ -1,3 +1,22 @@
 a{
     text-decoration: none !important;
+    color: black;
+}
+
+p,span,label{
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: 0;
+    padding: 12px 15px!important;
+}
+
+input:focus{
+    box-shadow: none !important;
 }

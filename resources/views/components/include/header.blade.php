@@ -11,14 +11,14 @@
         </button>
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="header_navigation navbar-nav mx-auto mb-2 mb-lg-0">
                 <!-- Link -->
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item px-2 dropdown dropdown-hover position-static">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false"> Sale </a>
+                        data-mdb-toggle="dropdown" aria-expanded="false"> Shop </a>
                     <!-- Dropdown menu -->
                     <div id="megaDropdown" class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown"
                         style="border-top-left-radius: 0; border-top-right-radius: 0;">
@@ -77,34 +77,55 @@
                     </div>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#">Sale</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Offers</a>
+                    <a class="nav-link" href="#">Men</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Women </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Blog </a>
                 </li>
                 <!-- Dropdown -->
             </ul>
             <!-- Icons -->
-            <ul class="navbar-nav d-flex flex-row me-1">
-                <li class="nav-item me-3 me-lg-0">
+            <ul class="headerMenusIcons navbar-nav d-flex flex-row me-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/login">Login</a></li>
+                      <li><a class="dropdown-item" href="/signup">SignUp</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item mx-2 me-3 me-lg-0">
                     <a class="nav-link" href="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                 </li>
-                <li class="nav-item me-3 me-lg-0">
+                <li class="nav-item mx-2 me-3 me-lg-0">
                     <a class="nav-link" href="#">
                         <i class="fa-regular fa-heart"></i>
                     </a>
                 </li>
-                <li class="nav-item me-3 me-lg-0">
+                <!-- Search -->
+                {{-- <form class="w-auto mx-3">
+                    <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
+                </form> --}}
+                <li class="nav-item mx-2 me-lg-0">
                     <a class="nav-link" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="userLogin mx-2 nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="#" value="1">
                       <i class="fa-regular fa-user" style="font-weight: 400; font-size:17px"></i>
                     </a>
                 </li>
-                <!-- Search -->
-                <form class="w-auto mx-3">
-                    <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
-                </form>
             </ul>
         </div>
     </div>
