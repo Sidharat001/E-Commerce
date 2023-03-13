@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,7 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
+
+// SignUp User 
+
+Route::post('/sign-up', [UsersController::class, 'store']);
