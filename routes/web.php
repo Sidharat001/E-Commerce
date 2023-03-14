@@ -19,18 +19,20 @@ Route::get('/', function () {
 });
 
 // Signup Page Routes
-Route::get('/signup', function () {
-    return view('signup');
-});
-
+Route::view('/signup', 'signup');
 Route::post('/sign-up', [UsersController::class, 'StoreUsersData']);
 
 // Users Login Routes
-Route::get('/login', function () {
-    return view('login');
-});
+Route::view('/login', 'login');
+Route::post('/login', [UsersController::class, 'Login']);
 
 // Fallback Page Routes
 Route::fallback(function(){
     return view('404');
+});
+
+// Logout Routes
+Route::get('/logout', function(){
+    session()->flush();
+    return redirect('/');
 });

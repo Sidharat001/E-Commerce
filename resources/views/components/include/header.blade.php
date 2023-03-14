@@ -121,11 +121,29 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </li>
-                <li class="userLogin mx-2 nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="#" value="1">
-                      <i class="fa-regular fa-user" style="font-weight: 400; font-size:17px"></i>
-                    </a>
-                </li>
+                @php
+                    $SessionData = Session::get('name');
+                    if(isset($SessionData)){
+                        echo '<li class="userLogin mx-2 nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="#" value="1">
+                                    <i class="fa-regular fa-user" style="font-weight: 400; font-size:17px"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2 nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="/logout" value="1">
+                                    Logout
+                                </a>
+                            </li>';
+                    }else{
+                        echo '<li class="mx-2 nav-item me-3 me-lg-0">
+                                    <a class="nav-link" href="#" value="1">
+                                        <i class="fa-regular fa-user" style="font-weight: 400; font-size:17px"></i>
+                                    </a>
+                                </li>';
+                    }
+                    
+                @endphp
+                
             </ul>
         </div>
     </div>

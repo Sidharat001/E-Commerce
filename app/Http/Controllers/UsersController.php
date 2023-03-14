@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Users;
-
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UsersController extends Controller
 {
@@ -34,7 +35,7 @@ class UsersController extends Controller
             $user->name = $request->name;
             $user->last_name = $request->lastName;
             $user->email = $request->email;
-            $user->password = bcrypt($request->password);
+            $user->password = Crypt::encrypt($request->password);
             $user->save();
             return redirect('/signup');
         }
@@ -42,8 +43,17 @@ class UsersController extends Controller
 
     /** Login Method For All Users **/
     public function login(Request $request){
-        
+        if(isset($request)){
+            $user = Users::where('email', $request->input('email'))->get();
+            if(Crypt::decrypt($user[0]->password) == $request->input('password')){
+                session(['name' => $user[0]->name]);
+                return redirect('/');
+            }else{
+                return "Invalid Password";
+            }
+        }
     }
+
 
 
 }
