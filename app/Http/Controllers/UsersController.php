@@ -43,7 +43,11 @@ class UsersController extends Controller
 
     /** Login Method For All Users **/
     public function login(Request $request){
-        if(isset($request)){
+        $validate  = $request->validate([
+            'email' => 'required|email|regex:/(.+)@(.+)\.(.+)/i',
+            'password' => 'required',
+        ]);
+        if($validate == true){
             $user = Users::where('email', $request->input('email'))->get();
             if(Crypt::decrypt($user[0]->password) == $request->input('password')){
                 session(['name' => $user[0]->name]);
