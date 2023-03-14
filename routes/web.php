@@ -13,19 +13,24 @@ use App\Http\Controllers\UsersController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// Home Page Routes 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
+// Signup Page Routes
 Route::get('/signup', function () {
     return view('signup');
 });
 
-// SignUp User 
+Route::post('/sign-up', [UsersController::class, 'StoreUsersData']);
 
-Route::post('/sign-up', [UsersController::class, 'store']);
+// Users Login Routes
+Route::get('/login', function () {
+    return view('login');
+});
+
+// Fallback Page Routes
+Route::fallback(function(){
+    return view('404');
+});
